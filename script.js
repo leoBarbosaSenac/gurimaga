@@ -65,9 +65,9 @@ function displayQuotes(quotes) {
 
         quotesContainer.innerHTML = `
             <div class="empty-message">
-                No quotes have been recorded yet.
+                Não foram cadastradas frases ainda.
                 <br>
-                Perhaps you could write the first one?
+                Quem sabe você não poderia cadastrar a primeira?
             </div>
         `;
 

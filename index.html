@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuoteBook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="ornament">
+                ❧ ───────── ❦ ───────── ❧
+            </div>
+
+            <h1>QUOTEBOOK</h1>
+
+            <p>
+                Pensamentos, palavras e sabedoria a ser lembrada.
+            </p>
+
+            <div class="ornament">
+                ───────── ❦ ─────────
+            </div>
+
+        </header>
+
+
+        <!-- QUOTES -->
+
+        <main>
+
+            <section class="quotes-section">
+
+                <div class="section-title">
+                    <span>❧</span>
+                    <h2>Frases</h2>
+                    <span>❧</span>
+                </div>
+
+                <div id="quotesContainer">
+
+                    <!-- Quotes will be inserted here by JavaScript -->
+
+                </div>
+
+            </section>
+
+
+            <!-- FORM -->
+
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>❧</span>
+                    <h2>Adicionar frase</h2>
+                    <span>❧</span>
+                </div>
+
+
+                <form id="quoteForm">
+
+                    <div class="form-group">
+
+                        <label for="quote">
+                            Frase
+                        </label>
+
+                        <textarea
+                            id="quote"
+                            placeholder="Escreva sua frase aqui..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="author">
+                            Author
+                        </label>
+
+                        <input
+                            type="text"
+                            id="author"
+                            placeholder="Quem disse isso?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                Data
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="context">
+                                Contexto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="context"
+                                placeholder="Qual o contexto desta fala?"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit">
+                        ❦ &nbsp; ADICIONAR FRASE &nbsp; ❦
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="ornament">
+                ───────── ❦ ─────────
+            </div>
+
+            <p>
+                Uma coleção de frases que vale a pena guardar.
+            </p>
+
+        </footer>
+
+    </div>
+
+    <footer>
+
+        <div class="ornament">
+            ───────── ❦ ─────────
+        </div>
+
+        <p>
+            Uma coleção de frases que vale a pena guardar.
+        </p>
+
+    </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
